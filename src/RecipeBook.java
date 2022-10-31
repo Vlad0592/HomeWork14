@@ -16,6 +16,7 @@ public class RecipeBook {
     public void addProduct(Recipe recipes) {
         if (!recipeBook.add(recipes)) {
             throw new RuntimeException();
+
         }
     }
 }

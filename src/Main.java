@@ -13,6 +13,7 @@ public class Main {
         menu.add(new Product("Сосиски", 165.20, 5));
         menu.add(new Product("Макароны", 15.70, 20));
 
+
         for (Object prod : menu) {
             System.out.println(prod);
         }

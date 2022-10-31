@@ -18,6 +18,7 @@ public class Main {
         for (Task task : allTasks) {
             System.out.println(task.getFirst() + "*" + task.getSecond());
 
+
         }
 
     }

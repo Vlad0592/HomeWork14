@@ -65,6 +65,7 @@ public class Recipe {
     public String toString() {
         return "Наименование рецепта: " + nameOfTheRecipe +
                 ", сумма продуктов = " + sumCastProducts;
+
     }
 
 }

@@ -16,7 +16,7 @@ public class Task {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Task task = (Task) o;
-        return (first == task.first && second == task.second)|| (first==task.second && second==task.first);
+        return (first == task.first && second == task.second)||(first==task.second && second==task.first);
 
     }
 
