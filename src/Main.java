@@ -4,6 +4,7 @@ import java.util.Set;
 public class Main {
     public static void main(String[] args) {
 
+
         Set<Product> menu = new HashSet<>();
 
         menu.add(new Product("Пыво", 15, 3));
@@ -36,7 +37,7 @@ public class Main {
         bookCook.addProduct(obed);
         bookCook.addProduct(tea);
 
-        //    bookCook.addProduct(obed);
+
 
 
     }

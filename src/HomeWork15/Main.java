@@ -21,6 +21,23 @@ public class Main {
 
         }
 
+
+        Set<Integer> list = new HashSet<Integer>();
+        int a = 999;
+        for (int i = 0; i <= 20; i++) {
+            double random = Math.random() * a;
+            list.add((int) random);
+        }
+
+        Iterator<Integer> it = list.iterator();
+        while (it.hasNext()) {
+            Integer number = it.next();
+            if (number % 2 != 0) {
+                it.remove();
+            }
+        }
+        System.out.println("Вывод оставшихся элементов " + list);
+
+        System.out.println();
     }
 }
-
