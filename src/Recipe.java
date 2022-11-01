@@ -14,9 +14,9 @@ public class Recipe {
         if (nameOfTheRecipe != null && !nameOfTheRecipe.isEmpty() && !nameOfTheRecipe.isBlank()) {
             this.nameOfTheRecipe = nameOfTheRecipe;
         }
-        if (products!=null && !products.isEmpty()) {
+        if (products != null && !products.isEmpty()) {
             this.products = products;
-        }else{
+        } else {
             throw new RuntimeException();
         }
         this.sumCastProducts = setSum(products);
@@ -58,7 +58,7 @@ public class Recipe {
 
     @Override
     public int hashCode() {
-        return Objects.hash(nameOfTheRecipe, sumCastProducts, products);
+        return Objects.hash(nameOfTheRecipe, products);
     }
 
     @Override
