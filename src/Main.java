@@ -38,6 +38,18 @@ public class Main {
         bookCook.addProduct(tea);
 
 
+        var passp = new Passport("45676767 56756545454", "Нестеров", "Владислав", "Валерьевич", "1990.11.01");
+        var passp1 = new Passport("0221 123456", "Петкин", "Виталий", "", "1981.12.01");
+        var passp2 = new Passport("0722 177456", "Лебедева", "Лена", "Алексеевна", "1999.12.21");
+        var passp3 = new Passport("0722 177456", "Сидоров", "Лебедь", "Лисинск", "1987.10.21");
+        var passpKeeper = new PassportKeeper();
+        passpKeeper.addPassport(passp2);
+        passpKeeper.addPassport(passp3);
+        passpKeeper.addPassport(passp1);
+        passpKeeper.addPassport(passp);
+        System.out.print(passpKeeper);
+        System.out.println(passpKeeper.getPassport("0222 125556"));
+        System.out.println(passpKeeper.getPassport("0222 "));
 
 
     }
